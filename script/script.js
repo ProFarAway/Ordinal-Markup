@@ -15,50 +15,50 @@ let clickCoolDown = 0;
 let infinityButtonText = 0;
 let game;
 const factorShiftCosts = [
-  200,
-  1000,
-  10000,
-  350000,
-  1e12,
-  1e21,
-  1e100,
+  101,
+  300,
+  3000,
+  50000,
+  1e8,
+  1e15,
+  1e35,
   1.095e272,
   Infinity
 ];
 const factorCostExp = [2, 2, 2, 3, 3, 6, 30, 100];
 const bupUpgradeCosts = [
-  1,1,1,12,
-  5,4,8,36,
-  72,73,16,108,
-  53,74,66,324,
-  5e15,Infinity,8e8,1e11,
-  Infinity,Infinity,2e19,1e19
+  1,1,1,6,
+  2,2,4,21,
+  22,23,6,105,
+  18,31,26,324,
+  5e14,Infinity,1e8,1e10,
+  Infinity,Infinity,2e18,1e18
 ];
-const slugMile = [1e10, 20, 15, 12, 10, 1, -1];
+const slugMile = [1e10, 200, 150, 120, 100, 26, -1];
 let totalMult = 1;
 let buptotalMute = 1;
 const challengeGoals = [
-  [1e32, 1e223, 5e270],
-  [5e270, V(10) + 1e270, V(17) + 1e270],
-  [1e200, 1e214, 1e256],
-  [1e33, 5e113, 1.5e119],
-  [1e122, 3.33e136, 1e219],
-  [1.02e33, 1e44, 4.75e108],
-  [1.05e13, 4.18e18, 1.02e20],
-  [3.0e10, 6.0e10, 2.4e11, Infinity]
+  [1e30, 1e203, 5e270],
+  [5e270, V(10) + 1e270, V(14) + 1e270],
+  [1e100, 1e114, 1e256],
+  [1e32, 5e110, 1.5e110],
+  [1e112, 3.33e126, 1e209],
+  [1.02e32, 1e42, 4.75e102],
+  [1.05e12, 4.18e14, 1.02e16],
+  [1.0e10, 2.0e10, 1.4e11, Infinity]
 ];
-const challengeCurve = [0, 0.5, 0.75, 1];
+const challengeCurve = [0.6, 0.7, 0.85, 1];
 let partOP = 0;
 let factorBoostLoop = 0;
 let cardinalLoop = ExpantaNum(0);
 /* eslint-disable */
 let collapseAnimation = 0;
 /* eslint-enable */
-const iupCosts = [1e5, 1e3, 1e9, 1e16, 2e22, 4e23, 1e19, 2e25, 4e27];
+const iupCosts = [1e4, 1e2, 1e8, 1e15, 2e20, 4e20, 1e17, 2e23, 4e26];
 const dupCosts = [
-  5,
-  1000,
-  9,
+  4,
+  500,
+  7,
   Infinity,
   Infinity,
   Infinity,
@@ -89,16 +89,16 @@ const BHO = V(27);
 const aupCost = [
   1,
   2,
-  4,
-  8,
-  16,
-  256,
-  65536,
-  2 ** 32,
-  2 ** 64,
-  2 ** 128,
-  2 ** 256,
-  2 ** 512
+  3,
+  5,
+  10,
+  100,
+  10000,
+  10 ** 8,
+  10 ** 16,
+  10 ** 32,
+  10 ** 64,
+  10 ** 128
 ];
 let AF = 0;
 const d = new Date();
